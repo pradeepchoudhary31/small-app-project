@@ -23,5 +23,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t your-dockerhub-username/small-app-project:latest .
-        docker push your-dockerhub-username/small-app-project:latest
+        docker build -t pradeepchoudhary31/small-app-project:latest .
+        docker push pradeepchoudhary31/small-app-project:latest
