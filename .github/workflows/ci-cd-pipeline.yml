@@ -28,5 +28,5 @@ jobs:
     # Build and Push API Docker Image
     - name: Build and Push API Docker Image
       run: |
-        docker build -t pradeepchoudhary31/small-app-api:latest -f Dockerfile.api .
-        docker push pradeepchoudhary31/small-app-api:latest
+        docker build -t pradeepchoudhary31/small-app-project:latest .
+        docker push pradeepchoudhary31/small-app-project:latest
