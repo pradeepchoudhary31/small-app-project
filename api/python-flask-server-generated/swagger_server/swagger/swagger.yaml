@@ -1,0 +1,32 @@
+openapi: 3.0.0
+info:
+  title: Simple Hello API
+  description: A simple API that returns "Hello World".
+  version: 1.0.0
+servers:
+- url: https://virtserver.swaggerhub.com/hewlettpackard/SimpleAppAPI/1.0.0
+  description: SwaggerHub API Auto Mocking
+paths:
+  /:
+    get:
+      summary: Get Hello World
+      operationId: get_hello_world
+      responses:
+        "200":
+          description: A successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+      x-openapi-router-controller: swagger_server.controllers.default_controller
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        message:
+          type: string
+          example: Hello World
+      example:
+        message: Hello World
+
